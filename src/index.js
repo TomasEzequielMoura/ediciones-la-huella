@@ -3,11 +3,26 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { GraphQLClient, ClientContext } from 'graphql-hooks'
+const client = new GraphQLClient({
+  url: "https://graphql.datocms.com/",
+  headers: {
+    "content-type": "application/json",
+    "Authorization": `Bearer ${process.env.REACT_APP_DATO_CMS_API}`,
+    // "Authorization": "Bearer c2a51fe4f20491c83d662c506ff1be",
+  }
+});
+
+console.log(process.env.DATO_CMS_API)
+console.log(client)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  
   <React.StrictMode>
-    <App />
+    <ClientContext.Provider value={client}>
+      <App />
+    </ClientContext.Provider>
   </React.StrictMode>
 );
 

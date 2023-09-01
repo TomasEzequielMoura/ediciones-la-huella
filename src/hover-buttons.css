@@ -1,0 +1,120 @@
+.button-creative{
+  width: fit-content;
+}
+
+.button-creative-auto {
+  width: fit-content;
+  margin: auto;
+}
+
+.navbar .button-creative{
+  margin: 0.5em;
+}
+
+.get-in-touch .button-creative{
+  margin: 0.5em 0;
+}
+
+.choose-your-plan .button-creative,
+.discover-our-services .button-creative {
+  margin: auto;
+}
+
+.button-creative ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button-creative ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  border-radius: 0.5em;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  padding: 0.5rem 1rem;
+}
+
+.button-primary-creative ul li {
+  --c: var(--color-700);
+  color: var(--c);
+  border: 0.2em solid var(--c);
+}
+
+.button-secondary-creative ul li {
+  --c: #ffffff;
+  color: #ffffff;
+  border: 0.1em solid var(--c);
+}
+
+.button-creative ul li span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+
+}
+
+.button-primary-creative ul li span,
+.button-secondary-creative ul li span,
+.button-green-creative ul li span,
+.button-blue-creative ul li span,
+.button-violet-creative ul li span {
+  background-color: var(--c);
+}
+
+.button-primary-creative ul li a,
+.button-blue-creative ul li a  {
+  color: var(--color-700);;
+}
+
+.button-secondary-creative ul li a {
+  color: #ffffff;
+}
+
+.button-green-creative ul li a {
+  color: #4ca583;
+}
+
+.button-violet-creative ul li a {
+  color: #9f39b4;
+}
+
+.button-creative ul li:hover {
+  color: rgb(255, 255, 255);
+}
+
+.button-secondary-creative ul li:hover {
+  color: #5c2431;
+}
+
+.button-creative ul li:hover span {
+  transform: translateY(0) scale(2);
+}
+
+.button-creative ul li span:nth-child(1) {
+  --n: 1;
+}
+
+.button-creative ul li span:nth-child(2) {
+  --n: 2;
+}
+
+.button-creative ul li span:nth-child(3) {
+  --n: 3;
+}
+
+.button-creative ul li span:nth-child(4) {
+  --n: 4;
+}
