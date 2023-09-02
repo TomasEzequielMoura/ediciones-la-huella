@@ -18,7 +18,7 @@ const Intro = () => {
             </h2>
             <div className='mt-5'>
               <a href="#contactUs">
-                <nav className="button-creative button-secondary-creative">
+                <nav className="button-creative button-secondary-creative contactanos-home">
                   <ul>
                     <li>
                       Contactanos<span></span><span></span><span></span><span></span>

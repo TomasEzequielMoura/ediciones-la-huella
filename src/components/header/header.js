@@ -14,7 +14,7 @@ const Header = ({details}) => {
             <nav className="mx-auto flex items-center justify-between pt-6 pb-6" aria-label="Global">
                 <div className="flex lg:flex-1">
                     <a href="/" className="-m-1.5 p-1.5">
-                        <img className="h-20 w-auto" src={LogoHeader} alt="" />
+                        <img className="logo-header w-auto" src={LogoHeader} alt="" />
                     </a>
                 </div>
                 <div className="flex lg:hidden">
