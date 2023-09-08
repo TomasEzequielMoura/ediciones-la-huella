@@ -6,7 +6,7 @@ import TipoLibro from '../../components/tipo-libro/tipo-libro'
 import './home.css';
 import FAQ from '../../components/faq/faq'
 import ClientesAccordion from '../../components/clientes-accordion/clientes-accordion'
-import ContactUs from '../../components/contact-us/contact-us'
+// import ContactUs from '../../components/contact-us/contact-us'
 
 const Home = ({details}) => {
 

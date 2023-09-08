@@ -4,7 +4,7 @@ import './tipo-libro.css';
 import circulo1 from '../../assets/images/futuras-generaciones.jpg';
 import circulo2 from '../../assets/images/mapa-bitacora.jpg';
 import circulo3 from '../../assets/images/volver-a-vivir.jpg';
-import circulo4 from '../../assets/images/Luis.jpg';
+// import circulo4 from '../../assets/images/Luis.jpg';
 
 const TipoLibro = () => {
   return (
