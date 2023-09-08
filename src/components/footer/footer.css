@@ -1,3 +1,13 @@
 .footer-background{
     background: #231f20;
 }
+
+.logo-footer {
+    height: 7.5rem;
+}
+
+@media (max-width: 639px){
+    .logo-footer {
+        height: 5rem;
+    }    
+}

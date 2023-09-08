@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className="md:flex md:justify-center">
                     <div className="mb-6 md:mb-0">
                         <a href="/" className="flex items-center d-flex-centrado">
-                            <img src={LogoFooter} className="mr-3" alt="FlowBite Logo" />
+                            <img src={LogoFooter} className="mr-3 logo-footer" alt="FlowBite Logo" />
                         </a>
                     </div>
                     {/* <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">

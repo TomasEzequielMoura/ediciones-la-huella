@@ -1,20 +1,68 @@
-.contact-us .button-creative.button-primary-creative{
+.contact-us .button-creative.button-primary-creative {
     margin: auto;
 }
 
-.contacto { 
+.contact-us {
     gap: 20px;
     display: flex;
     flex-direction: column;
     font-size: 1.2rem;
 }
 
-.contacto p{
+.contact-us .contacto-data p {
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-.contacto p svg {
+.contact-us p svg {
     color: #5c2332;
+}
+
+.contact-us .errorMessage {
+    color: red;
+    font-size: 0.8rem;
+}
+
+.msg-sent p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+}
+
+.msg-sent {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.msg-sent p svg {
+    width: 100px;
+}
+
+.form-size {
+    width: 100%;
+    text-align: center;
+    max-width: 600px;
+}
+
+
+@media (max-width: 1023px) {
+    .contact-us .d-flex-centrado {
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+
+    .contacto-data {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .contact-us .contacto-data p {
+        font-size: 0.9rem;
+    }
 }
