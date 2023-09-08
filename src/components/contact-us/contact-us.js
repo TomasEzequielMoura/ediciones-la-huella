@@ -1,29 +1,13 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import "./contact-us.css";
 
 import { DevicePhoneMobileIcon, CheckIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
-
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.min.css';
 
 import { useForm } from 'react-hook-form';
 
 import { ProgressBar } from 'react-loader-spinner'
 
 import emailjs from '@emailjs/browser';
-
-const toastifySuccess = () => {
-    toast('Form sent!', {
-        position: 'bottom-right',
-        autoClose: 5000,
-        hideProgressBar: true,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: false,
-        className: 'submit-feedback success',
-        toastId: 'notifyToast'
-    });
-};
 
 const ContactUs = () => {
 
@@ -82,7 +66,7 @@ const ContactUs = () => {
             <div className="columns-2 d-flex-centrado direction-row gap-x-8">
                 {
                     waitingEmailJS ?
-                        <div className='msg-sent'>
+                        <div className='msg-sent form-size'>
                             <ProgressBar
                                 height="80"
                                 width="80"
