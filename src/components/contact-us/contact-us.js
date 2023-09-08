@@ -10,6 +10,7 @@ import { useForm } from 'react-hook-form';
 
 import { ProgressBar } from 'react-loader-spinner'
 
+import emailjs from '@emailjs/browser';
 
 const toastifySuccess = () => {
     toast('Form sent!', {
