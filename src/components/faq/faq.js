@@ -53,7 +53,7 @@ class Application extends React.Component {
             <button type="button" className="btn" onClick={this.toggleExpand(true)}>Expand All</button>
             <button type="button" className="btn" onClick={this.toggleExpand()}>Collapse All</button> */}
             <h2 className='subtitle'>Preguntas Frecuentes</h2>
-            <h3 className='subsubtitle2'>Respuestas a tus preguntas más comunes</h3>
+            <h3 className='subsubtitle2'>Respuestas a las preguntas más comunes</h3>
             <dl className="accordion">
                 {
                     accordionQuestionList.map((item, index) => (

@@ -9,14 +9,13 @@ const ClientsAccordion = () => {
     return (
         <>
             <div className="container" id='clientes-satisfechos'>
-                <h2 className='subtitle'>Clientes Satisfechos</h2>
-                <h3 className='subsubtitle2'>Cientas de personas ya inmortalizaron sus memorias y recuerdos con nostoros</h3>
+                <h2 className='subtitle'>Clientes Agradecidos</h2>
+                <h3 className='subsubtitle2'>Nuestra mayor satisfacción es lograr que nuestros clientes deseen  compartir con nosotros la felicidad de inmortalizar sus historias.</h3>
                 <section className="clientes-accordion">
                     {cards.map((card, index) => {
                         const isActive = active === index ? "active" : "";
                         return (
-                            <article key={card.image} className={isActive} onClick={() => handleToggle(index)}
-                            >
+                            <article key={card.image} className={isActive} onClick={() => handleToggle(index)}>
                                 <img src={card.image} alt='acordion img' />
                                 <div className="content">
                                     <div>

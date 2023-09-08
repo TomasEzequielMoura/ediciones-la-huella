@@ -35,7 +35,7 @@ const Header = ({details}) => {
                     Preguntas Frecuentes
                     </a>
                     <a  href="#clientes-satisfechos" className=" font-semibold leading-6 ">
-                    Clientes Satisfechos
+                    Clientes Agradecidos
                     </a>
                 </Popover.Group>
             </nav>
@@ -44,7 +44,7 @@ const Header = ({details}) => {
                 <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
                         <a href="#clientes-satisfechos" className="-m-1.5 p-1.5">
-                            <span className="sr-only">Clientes Satisfechos</span>
+                            <span className="sr-only">Clientes Agradecidos</span>
                         </a>
                         <button
                             type="button"
@@ -74,7 +74,7 @@ const Header = ({details}) => {
                                     href="#clientes-satisfechos"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50"
                                 >
-                                    Clientes Satisfechos
+                                    Clientes Agradecidos
                                 </a>
                             </div>
                         </div>

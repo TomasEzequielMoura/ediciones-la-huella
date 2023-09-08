@@ -69,9 +69,8 @@ section.clientes-accordion {
     visibility: visible;
 }
 
-.clientes-accordion article.active img {
-    object-fit: cover;
-    filter: blur(0px);
+.clientes-accordion article:nth-child(4) img {
+    object-position: right bottom;
 }
 
 .clientes-accordion article img {
@@ -84,7 +83,10 @@ section.clientes-accordion {
     filter: grayscale(0.5);
     filter: blur(1px);
     object-fit: cover;
+}
 
+.clientes-accordion article.active img {
+    filter: blur(0px);
 }
 
 .clientes-accordion .logo {
@@ -124,4 +126,30 @@ section.clientes-accordion {
 
 .clientes-accordion .read-the-docs {
     color: #888;
+}
+
+@media (max-width: 1023px) {
+    section.clientes-accordion{
+        flex-direction: column;
+    }
+
+    .clientes-accordion article {
+        height: 40px !important;
+        width: 100% !important;
+    }
+
+    .clientes-accordion article img{
+        height: auto !important;
+    }
+
+    .clientes-accordion article.active {
+        height: 330px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .clientes-accordion article.active img {
+        height: 100% !important;
+        width: 100%;
+    }
 }

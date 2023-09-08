@@ -90,3 +90,9 @@
 .accordion .item-faq:not(:last-child){
   border-bottom: 3px solid #231f20;
 }
+
+@media (max-width: 768px) {
+  .accordion {
+    margin: 1.5rem auto 3rem;
+  }
+}

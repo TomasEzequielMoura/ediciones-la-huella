@@ -8,27 +8,27 @@ export const cards = [
     {
         header: "Rita",
         image: image1,
-        text: `Image description here`,
+        text: `- Mi legado es mi mensaje -`,
     },
     {
         header: "Maximina",
         image: image2,
-        text: `Image description here`,
+        text: `- Aroma a hogar -`,
     },
 
     {
-        header: "4mujeres",
+        header: "Lucy",
         image: image3,
-        text: `Image description here`,
+        text: `- Una mujer de Pilar -`,
     },
     {
-        header: "Iñiguez",
+        header: "Nombre",
         image: image4,
-        text: `Image description here`,
+        text: `- Herencia de un estilo -`,
     },
     {
         header: "Luis",
         image: image5,
-        text: `Image description here`,
+        text: `- Cosecha de una vida plena -`,
     },
 ];

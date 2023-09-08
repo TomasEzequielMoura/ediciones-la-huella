@@ -6,3 +6,11 @@
 .logo-header {
     height: 7.5rem;
 }
+
+
+
+@media (max-width: 639px){
+    .logo-header {
+        height: 5rem;
+    }    
+}

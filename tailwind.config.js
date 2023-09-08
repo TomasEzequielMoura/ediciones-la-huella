@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  SENDGRID_API: "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",
   content: [
     "./src/**/*.{js,jsx,ts,tsx}"
   ],
