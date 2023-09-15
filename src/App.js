@@ -6,7 +6,7 @@ import Home from './pages/home/home';
 import NotFound from './pages/notFound/notFound';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-
+import { FallingLines } from 'react-loader-spinner'
 
 const test = `query test {
   allEdicionesLaHuellas {
@@ -47,7 +47,18 @@ function App() {
     }
   });
 
-  if (loading) return "Loading...";
+  if (loading) return (
+    <>
+      <div className='loader-general'>
+        <FallingLines
+          color="#5c2431"
+          width="100"
+          visible={true}
+          ariaLabel='falling-lines-loading'
+        />
+      </div>
+    </>
+  );
   if (error) return "Something Bad Happened";
 
   return (

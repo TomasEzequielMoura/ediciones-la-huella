@@ -152,6 +152,13 @@ section {
   margin: auto;
 }
 
+.loader-general{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 1023px) {
   .container {
     padding: 0 1rem;
