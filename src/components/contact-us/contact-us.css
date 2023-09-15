@@ -49,6 +49,9 @@
     max-width: 600px;
 }
 
+.line-heigth-form{
+    line-height: 1;
+}
 
 @media (max-width: 1023px) {
     .contact-us .d-flex-centrado {

@@ -22,7 +22,7 @@ export const cards = [
         text: `- Una mujer de Pilar -`,
     },
     {
-        header: "Nombre",
+        header: "Lily",
         image: image4,
         text: `- Herencia de un estilo -`,
     },

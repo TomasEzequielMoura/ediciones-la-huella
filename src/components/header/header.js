@@ -27,7 +27,7 @@ const Header = ({details}) => {
                         <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                     </button>
                 </div>
-                <Popover.Group className="hidden lg:flex lg:gap-x-12">
+                <Popover.Group className="hidden lg:flex lg:gap-x-8">
                     <a href="#tipo-libros" className=" font-semibold leading-6 ">
                         Libros
                     </a>
@@ -36,6 +36,9 @@ const Header = ({details}) => {
                     </a>
                     <a  href="#clientes-satisfechos" className=" font-semibold leading-6 ">
                     Clientes Agradecidos
+                    </a>
+                    <a  href="#contactUs" className=" font-semibold leading-6 ">
+                    Contactanos
                     </a>
                 </Popover.Group>
             </nav>
@@ -61,20 +64,30 @@ const Header = ({details}) => {
                                 <a
                                     href="#tipo-libros"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50"
+                                    onClick={() => setMobileMenuOpen(false)}
                                 >
                                     Libros
                                 </a>
                                 <a
                                     href="#faq"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50"
+                                    onClick={() => setMobileMenuOpen(false)}
                                 >
                                     Preguntas Frecuentes
                                 </a>
                                 <a
                                     href="#clientes-satisfechos"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50"
+                                    onClick={() => setMobileMenuOpen(false)}
                                 >
                                     Clientes Agradecidos
+                                </a>
+                                <a
+                                    href="#contactUs"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
+                                    Contactanos
                                 </a>
                             </div>
                         </div>

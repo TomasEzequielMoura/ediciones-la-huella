@@ -29,7 +29,7 @@
     height: 260px;
 }
 
-.container-tipo-libro .column-card:nth-child(1) .card:hover .content{
+.container-tipo-libro .column-card:nth-child(1) .card:hover .content {
     height: 110px;
 }
 
@@ -100,7 +100,7 @@
     position: relative;
 }
 
-.column-card{
+.column-card {
     width: 100%;
     display: inherit;
     gap: 40px;
@@ -119,6 +119,14 @@
 }
 
 
+.column-card:nth-child(1) .img-box img {
+    object-position: right;
+}
+
+.column-card:nth-child(2) .card:nth-child(2) .img-box img {
+    object-position: 30% 100%;
+}
+
 
 @media (max-width: 1536px) {
 
@@ -126,7 +134,7 @@
         height: 111px !important;
     }
 
-    .container-tipo-libro .column-card:nth-child(1) .card:hover{
+    .container-tipo-libro .column-card:nth-child(1) .card:hover {
         height: 255px !important;
     }
 
@@ -164,22 +172,22 @@
         gap: 80px 40px;
     }
 
-    .container-tipo-libro .card .content{
+    .container-tipo-libro .card .content {
         padding: 0 20px;
     }
 }
 
 @media (max-width: 1023px) {
-    section#tipo-libros{
+    section#tipo-libros {
         padding: 2rem 1rem 4rem;
     }
 
-    .container-tipo-libro{
+    .container-tipo-libro {
         gap: 0px !important;
         display: block !important;
     }
 
-    .container-tipo-libro .column-card:nth-child(2) .card{
+    .container-tipo-libro .column-card:nth-child(2) .card {
         margin: 5.5rem 0 0;
     }
 
@@ -190,111 +198,172 @@
     .container-tipo-libro .column-card:nth-child(2) .card:hover {
         height: 280px !important;
     }
-    
-    .container-tipo-libro .column-card:nth-child(2) .card:hover .content{
+
+    .container-tipo-libro .column-card:nth-child(2) .card:hover .content {
         height: 137px !important;
     }
 }
 
 
-@media (max-width: 767px) {
-    .container-tipo-libro .card:hover .img-box{
-        top: -65px;
+@media (max-width: 1023px) {
+    .remplazohref {
+        text-decoration: none;
+    }
+      
+    .cards-section figure img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin: auto;
     }
 
-    .container-tipo-libro .column-card:nth-child(2) .card{
-        margin: 3rem 0 0;
+    .cards-section figure h4 {
+        font-size: 1.4rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
     }
 
-    .container-tipo-libro .column-card:nth-child(1) .card:hover .content,
-    .container-tipo-libro .column-card:nth-child(2) .card:hover .content {
-        height: 163px !important;
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 0.5rem 2rem;
     }
 
-    .container-tipo-libro .column-card:nth-child(1) .card:hover,
-    .container-tipo-libro .column-card:nth-child(2) .card:hover {
-        height: 310px !important;
-    }
-}
-
-@media (max-width: 639px) {
-    .container-tipo-libro {
-        padding-top: 50px;
-    }
-}
-
-@media (max-width: 595px) {
-    .container-tipo-libro .column-card:nth-child(1) .card:hover, .container-tipo-libro .column-card:nth-child(2) .card:hover {
-        height: 330px !important;
+    .contenedor_tarjeta {
+        width: 100%;
     }
 
-    .container-tipo-libro .column-card:nth-child(1) .card:hover .content, .container-tipo-libro .column-card:nth-child(2) .card:hover .content {
-        height: 189px !important;
-    }
-}
-
-@media (max-width: 517px) {
-    .container-tipo-libro .column-card:nth-child(1) .card:hover, .container-tipo-libro .column-card:nth-child(2) .card:hover {
-        height: 360px !important;
-    }
-
-    .container-tipo-libro .column-card:nth-child(1) .card:hover .content, .container-tipo-libro .column-card:nth-child(2) .card:hover .content {
-        height: 216px !important;
-    }
-}
-
-@media (max-width: 480px) {
-    .container-tipo-libro .card {
-        width: 230px;
-        border-radius: 15px;
+    figure {
+        margin: 0;
+        position: relative;
+        transition: all ease .5s;
+        transform-style: preserve-3d;
+        transform: perspective(600px) rotateY(0deg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        /* background: linear-gradient(180deg, rgba(61, 26, 130, 1) 56%, rgba(35, 13, 106, 1) 78%); */
+        padding: 20px !important;
+        border-radius: 20px !important;
+        /* min-height: 300px; */
+        width: fit-content;
+        margin: auto;
     }
 
-    .container-tipo-libro .card .content p {
+    .contenedor_tarjeta:hover figure img {
+        filter: blur (2px);
+    }
+
+    figure .frontal,
+    figure .trasera {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        transition: all ease .5s;
+    }
+
+    .frontal h4 {
+        color: #5c2431;
+        margin-top: 0.8rem;
+    }
+
+    figure .frontal {
+        display: block;
+        backface-visibility: hidden;
+    }
+
+
+    figure .trasera {
+        position: absolute;
+        top: 0;
+        padding: 20px;
+        color: #fff;
+        transform: perspective(600px) rotateY(180deg);
+        backface-visibility: hidden;
+        overflow: hidden;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        font-weight: 500;
+        border-radius: 20px !important;
+    }
+
+
+    figure .trasera p {
+        color: #1e2128;
+        font-weight: 400;
+    }
+
+    .contenedor_tarjeta:hover figure {
+        -webkit-transform: perspective(600px) rotateY(180deg);
+        -ms-transform: perspective(600px) rotateY(180deg);
+        -o-transform: perspective(600px) rotateY(180deg);
+        transform: perspective(600px) rotateY(180deg);
+    }
+
+    .cards-section {
+        margin-top: 5rem;
+    }
+
+    .cards-section figure {
+        min-height: 300px;
+        background: #ffffff;
+    }
+
+
+    .cards-section .contenedor_tarjeta figure {
+        -webkit-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
+    }
+
+    .cards-section figure .trasera {
+        padding: 1rem;
+    }
+
+    .cards-section .card img {
+        width: 70%;
+    }
+
+    .cards-section {
+        margin-top: 2rem;
+    }
+
+    .card-title.h5 {
+        font-size: 1.1rem;
+    }
+
+    .card p {
         font-size: 1rem;
     }
 
-    .container-tipo-libro .card .content a {
-        font-size: 0.9rem;
+    .card-body {
+        padding: 1rem 10px;
     }
 
-    .content h2 {
-        font-size: 1.75em;
-        margin-bottom: 0.7714em;
-    }
-}
-
-@media (max-width: 440px) {
-    .container-tipo-libro .column-card:nth-child(1) .card:hover, .container-tipo-libro .column-card:nth-child(2) .card:hover {
-        height: 410px !important;
-    }
-
-    .container-tipo-libro .column-card:nth-child(1) .card:hover .content, .container-tipo-libro .column-card:nth-child(2) .card:hover .content {
-        height: 271px !important;
+    .corregir-margin {
+        margin: 0;
     }
 }
 
-@media (max-width: 399px) {
-    .container-tipo-libro .column-card:nth-child(1) .card:hover .content, .container-tipo-libro .column-card:nth-child(2) .card:hover .content {
-        height: 331px !important;
+@media (max-width: 575px) {
+    .cards-section figure {
+        min-height: auto;
     }
 
-    .container-tipo-libro .column-card:nth-child(1) .card:hover, .container-tipo-libro .column-card:nth-child(2) .card:hover {
-        height: 470px !important;
-    }
-}
-
-@media (max-width: 347px) {
-    .container-tipo-libro .column-card:nth-child(1) .card:hover .content, .container-tipo-libro .column-card:nth-child(2) .card:hover .content {
-        padding: 0 15px
-    }
-}
-
-@media (max-width: 337px) {
-    .container-tipo-libro .column-card:nth-child(1) .card:hover .content, .container-tipo-libro .column-card:nth-child(2) .card:hover .content {
-        height: 365px !important;
+    .cards-section figure .trasera {
+        font-size: 1rem;
+        padding: 1rem;
     }
 
-    .container-tipo-libro .column-card:nth-child(1) .card:hover, .container-tipo-libro .column-card:nth-child(2) .card:hover {
-        height: 510px !important;
+    .cards-section figure img{
+        width: 230px;
+        height: 230px;
     }
 }

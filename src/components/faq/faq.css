@@ -43,6 +43,7 @@
   border-bottom: 1px solid #5c2332;
   text-align: left;
   font-weight: 600;
+  padding-right: 60px;
 }
 .accordion .title::after {
   content: "+";

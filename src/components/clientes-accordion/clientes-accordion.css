@@ -60,7 +60,7 @@ section.clientes-accordion {
     justify-content: center;
     align-items: center;
     gap: 14px;
-    background: linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0 / 80%));
+    background: linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0 / 100%));
     transition: 0.25s;
 }
 

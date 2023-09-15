@@ -20,12 +20,13 @@ const ContactUs = () => {
 
         console.log(data)
 
-        const { firstName, lastName, email, phoneNumber, message } = data;
+        const { firstName, lastName, email, phoneNumber, pais, message } = data;
 
         console.log('firstName: ', firstName);
         console.log('lastName: ', lastName);
         console.log('email: ', email);
         console.log('phoneNumber: ', phoneNumber);
+        console.log('pais: ', phoneNumber);
         console.log('Message: ', message);
 
         try {
@@ -34,6 +35,7 @@ const ContactUs = () => {
                 lastName,
                 email,
                 phoneNumber,
+                pais,
                 message
             };
             await emailjs.send(
@@ -58,10 +60,10 @@ const ContactUs = () => {
     } = useForm();
 
     return (
-        <section className="contact-us container">
+        <section id="contactUs" className="contact-us container">
             <div className="mx-auto max-w-2xl text-center">
                 <h2 className='subtitle'>Contactanos</h2>
-                <h3 className='subsubtitle2'>¡Llena el formulario! Estamos listos para escuchar tu historia</h3>
+                <h3 className='subsubtitle2'>¡Completa el formulario! Estamos listos para escuchar tu historia</h3>
             </div>
             <div className="columns-2 d-flex-centrado direction-row gap-x-8">
                 {
@@ -95,7 +97,7 @@ const ContactUs = () => {
                                                 <label htmlFor="firstNamee" className="block text-sm font-semibold leading-6 text-gray-900">
                                                     Nombre *
                                                 </label>
-                                                <div className="mt-2.5">
+                                                <div className="mt-2.5 line-heigth-form">
                                                     <input
                                                         placeholder='Nombre'
                                                         type="text"
@@ -118,7 +120,7 @@ const ContactUs = () => {
                                                 <label htmlFor="lastName" className="block text-sm font-semibold leading-6 text-gray-900">
                                                     Apellido *
                                                 </label>
-                                                <div className="mt-2.5">
+                                                <div className="mt-2.5 line-heigth-form">
                                                     <input
                                                         placeholder='Apellido'
                                                         type="text"
@@ -141,7 +143,7 @@ const ContactUs = () => {
                                                 <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
                                                     Correo electrónico *
                                                 </label>
-                                                <div className="mt-2.5">
+                                                <div className="mt-2.5 line-heigth-form">
                                                     <input
                                                         placeholder='Correo electrónico'
                                                         type="email"
@@ -155,15 +157,15 @@ const ContactUs = () => {
                                                         })}
                                                     ></input>
                                                     {errors.email && (
-                                                        <span className='errorMessage'>Por favor ingrese un email valido</span>
+                                                        <span className='errorMessage'>Por favor ingrese un email valido. Debe contener un "@"</span>
                                                     )}
                                                 </div>
                                             </div>
-                                            <div className="sm:col-span-2">
+                                            <div >
                                                 <label htmlFor="phoneNumber" className="block text-sm font-semibold leading-6 text-gray-900">
                                                     Celular *
                                                 </label>
-                                                <div className="relative mt-2.5">
+                                                <div className="relative mt-2.5 line-heigth-form">
                                                     <input
                                                         placeholder='Celular'
                                                         type="tel"
@@ -177,17 +179,40 @@ const ContactUs = () => {
                                                         })}
                                                     ></input>
                                                     {errors.phoneNumber && (
-                                                        <span className='errorMessage'>Por favor ingrese un celular valido</span>
+                                                        <span className='errorMessage'>Por favor ingrese un celular valido. Maximo 14 caracteres.</span>
                                                     )}
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <label htmlFor="firstNamee" className="block text-sm font-semibold leading-6 text-gray-900">
+                                                    País *
+                                                </label>
+                                                <div className="mt-2.5 line-heigth-form">
+                                                    <input
+                                                        placeholder='País'
+                                                        type="text"
+                                                        name="pais"
+                                                        id="pais"
+                                                        autoComplete="given-name"
+                                                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                                        {...register('pais', {
+                                                            required: { value: true, message: 'Por favor ingrese su país' },
+                                                            maxLength: {
+                                                                value: 30,
+                                                                message: 'Maximo 30 caracteres'
+                                                            }
+                                                        })}
+                                                    ></input>
+                                                    {errors.pais && <span className='errorMessage'>{errors.pais.message}</span>}
                                                 </div>
                                             </div>
                                             <div className="sm:col-span-2">
                                                 <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
                                                     Mensaje *
                                                 </label>
-                                                <div className="mt-2.5">
+                                                <div className="mt-2.5 line-heigth-form">
                                                     <textarea
-                                                        placeholder='Plasme su idea'
+                                                        placeholder='Contame, como te puedo ayudar?'
                                                         name="message"
                                                         id="message"
                                                         rows={4}
