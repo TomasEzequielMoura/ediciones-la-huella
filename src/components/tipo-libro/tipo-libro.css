@@ -119,7 +119,8 @@
 }
 
 
-.column-card:nth-child(1) .img-box img {
+.column-card:nth-child(1) .img-box img,
+.cards-section:nth-child(1) .contenedor_tarjeta img.fluid {
     object-position: right;
 }
 
