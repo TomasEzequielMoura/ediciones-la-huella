@@ -37,7 +37,7 @@ class Application extends React.Component {
     toggle = (index) => () => {
 
         let notIndex;
-        if(index == 2){
+        if(index === 2){
             notIndex = 1
         } else {
             notIndex = 2
