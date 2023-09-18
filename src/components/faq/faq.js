@@ -31,27 +31,24 @@ class Application extends React.Component {
         this.state = {
             block1: true,
             block2: false,
-            block3: false,
         };
     }
 
     toggle = (index) => () => {
-        this.setState({ [`block${index}`]: !this.state[`block${index}`] });
-    }
 
-    toggleExpand = (expand = false) => () => {
-        this.setState({
-            block1: expand,
-            block2: expand,
-            block3: expand,
-        });
+        let notIndex;
+        if(index == 2){
+            notIndex = 1
+        } else {
+            notIndex = 2
+        }
+
+        this.setState({ [`block${index}`] : !this.state[`block${index}`] });
+        this.setState({ [`block${notIndex}`] : !this.state[`block${notIndex}`] });
     }
 
     render() {
         return <div className="container faq-section" id='faq'>
-            {/* <h1>React Accordion</h1>
-            <button type="button" className="btn" onClick={this.toggleExpand(true)}>Expand All</button>
-            <button type="button" className="btn" onClick={this.toggleExpand()}>Collapse All</button> */}
             <h2 className='subtitle'>Preguntas Frecuentes</h2>
             <h3 className='subsubtitle2'>Respuestas a las preguntas más comunes</h3>
             <dl className="accordion">
