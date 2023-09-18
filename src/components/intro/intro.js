@@ -37,7 +37,8 @@ const Intro = () => {
             loop={true}
             playing={true}
             muted={true} 
-            playsInline/>
+            playsinline={true}
+            />
         </div>
       </div>
     </section>
