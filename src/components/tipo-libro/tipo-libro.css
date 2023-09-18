@@ -242,7 +242,9 @@
         position: relative;
         transition: all ease .5s;
         transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
         transform: perspective(600px) rotateY(0deg);
+        -webkit-transform: perspective(600px) rotateY(0deg);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -274,13 +276,14 @@
 
     figure .frontal {
         display: block;
-        backface-visibility: hidden;
+        perspective: 0;
         -webkit-perspective: 0;
-        -webkit-backface-visibility: hidden;
+        transform: translate3d(0,0,0);
         -webkit-transform: translate3d(0,0,0);
         visibility:visible;
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-
+        -webkit-backface-visibility: hidden;
     }
 
 
@@ -290,12 +293,14 @@
         padding: 20px;
         color: #fff;
         transform: perspective(600px) rotateY(180deg);
+        -webkit-transform:perspective(600px) rotateY(180deg);
         backface-visibility: hidden;
+        perspective: 0;
         -webkit-perspective: 0;
         -webkit-backface-visibility: hidden;
         visibility:visible;
-        backface-visibility: hidden;
         overflow: hidden;
+        -webkit-overflow: hidden;
         display: flex;
         align-content: center;
         align-items: center;

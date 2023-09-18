@@ -159,6 +159,10 @@ section {
   justify-content: center;
 }
 
+input, textarea {
+  -webkit-appearance: none;
+}
+
 @media (max-width: 1023px) {
   .container {
     padding: 0 1rem;
