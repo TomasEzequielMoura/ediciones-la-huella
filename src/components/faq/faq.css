@@ -19,6 +19,7 @@
   background: #1569a8;
   color: white;
   transition: 0.5s;
+  -webkit-transition: 0.5s;
 }
 
 .accordion {
@@ -35,6 +36,7 @@
   padding: 30px 30px;
   cursor: pointer;
   transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
   color: white;
   position: relative;
   font-size: 20px;
@@ -50,6 +52,7 @@
   font-size: 30px;
   color: white;
   transition: transform 0.5s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out;
   position: absolute;
   right: 30px;
   font-family: monospace;
@@ -57,16 +60,19 @@
 }
 .accordion .title.is-expanded {
   transition: background 0.5s;
+  -webkit-transition: background 0.5s;
   background: #5c2332;
 }
 .accordion .title.is-expanded::after {
   content: "-";
   transform: rotate(-360deg);
+  -webkit-transform: rotate(-360deg);
 }
 .accordion .content {
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.5s;
+  -webkit-transition: max-height 0.5s;
   margin: 0;
   padding: 0 30px;
   border: solid 1px #eeeeee;
@@ -92,6 +98,7 @@
   margin: 0;
   opacity: 0;
   transition: 0.5s;
+  -webkit-transition: 0.5s;
   font-size: 1.1rem;
   font-weight: 500;
 }

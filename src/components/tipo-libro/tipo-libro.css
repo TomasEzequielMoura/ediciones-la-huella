@@ -20,7 +20,9 @@
     background: white;
     border-radius: 20px;
     transition: 0.5s;
+    -webkit-transition: 0.5s;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
     flex: 33% 1;
 }
 
@@ -46,6 +48,7 @@
     border-radius: 12px;
     overflow: hidden;
     transition: 0.5s;
+    -webkit-transition: 0.5s;
 }
 
 .container-tipo-libro .card:hover .img-box {
@@ -64,6 +67,7 @@
     text-align: center;
     overflow: hidden;
     transition: 0.5s;
+    -webkit-transition: 0.5s;
 }
 
 .container-tipo-libro .card .content {
@@ -104,6 +108,7 @@
     width: 100%;
     display: inherit;
     gap: 40px;
+    height: 300px;
 }
 
 .container-tipo-libro .card .content a:hover {
@@ -203,6 +208,11 @@
     .container-tipo-libro .column-card:nth-child(2) .card:hover .content {
         height: 137px !important;
     }
+
+    section .corregir-margin div:nth-child(3) .contenedor .contenedor_tarjeta img{
+        object-position: 30% 50%;
+    }
+
 }
 
 
@@ -210,7 +220,7 @@
     .remplazohref {
         text-decoration: none;
     }
-      
+
     .cards-section figure img {
         width: 300px;
         height: 300px;
@@ -241,6 +251,7 @@
         margin: 0;
         position: relative;
         transition: all ease .5s;
+        -webkit-transition: all ease .5s;
         transform-style: preserve-3d;
         -webkit-transform-style: preserve-3d;
         transform: perspective(600px) rotateY(0deg);
@@ -249,10 +260,8 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        /* background: linear-gradient(180deg, rgba(61, 26, 130, 1) 56%, rgba(35, 13, 106, 1) 78%); */
         padding: 20px !important;
         border-radius: 20px !important;
-        /* min-height: 300px; */
         width: fit-content;
         margin: auto;
     }
@@ -267,6 +276,7 @@
         height: 100%;
         border-radius: 5px;
         transition: all ease .5s;
+        -webkit-transition: all ease .5s;
     }
 
     .frontal h4 {
@@ -278,9 +288,9 @@
         display: block;
         perspective: 0;
         -webkit-perspective: 0;
-        transform: translate3d(0,0,0);
-        -webkit-transform: translate3d(0,0,0);
-        visibility:visible;
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        visibility: visible;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         -webkit-backface-visibility: hidden;
@@ -293,12 +303,12 @@
         padding: 20px;
         color: #fff;
         transform: perspective(600px) rotateY(180deg);
-        -webkit-transform:perspective(600px) rotateY(180deg);
+        -webkit-transform: perspective(600px) rotateY(180deg);
         backface-visibility: hidden;
         perspective: 0;
         -webkit-perspective: 0;
         -webkit-backface-visibility: hidden;
-        visibility:visible;
+        visibility: visible;
         overflow: hidden;
         -webkit-overflow: hidden;
         display: flex;
@@ -378,7 +388,7 @@
         padding: 1rem;
     }
 
-    .cards-section figure img{
+    .cards-section figure img {
         width: 230px;
         height: 230px;
     }
