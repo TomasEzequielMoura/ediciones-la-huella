@@ -29,11 +29,11 @@ class MobileTipoLibro extends React.Component {
                   <img src={imagen} className='fluid' alt="card-user" />
                   <h4>{title1}<br></br>{title2}</h4>
                 </div>
-                <figcaption className='trasera'>
+                <div className='trasera'>
                   <p>
                     {description}
                   </p>
-                </figcaption>
+                </div>
               </figure>
             </div>
           </div>
