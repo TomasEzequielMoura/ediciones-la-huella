@@ -293,8 +293,6 @@ section#tipo-libros{
         transform: perspective(600px) rotateY(180deg);
         opacity:1;
         visibility:visible;
-        -webkit-transition: opacity 0.5s;
-        transition: opacity 0.5s;
     }
 
     .cards-section {
