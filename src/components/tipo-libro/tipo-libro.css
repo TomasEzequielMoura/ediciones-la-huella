@@ -16,7 +16,7 @@
     align-items: flex-start;
     width: 350px;
     max-width: 100%;
-    height: 300px;
+    height: 330px;
     background: white;
     border-radius: 20px;
     transition: 0.5s;
@@ -28,18 +28,12 @@
     flex: 33% 1;
 }
 
-
-.container-tipo-libro .column-card:nth-child(1) .card:hover {
-    height: 260px;
+.container-tipo-libro .column-card .card:hover .content {
+    height: 283px;
 }
-
-.container-tipo-libro .column-card:nth-child(1) .card:hover .content {
-    height: 110px;
-}
-
 
 .container-tipo-libro .card:hover {
-    height: 310px;
+    height: 410px;
 }
 
 .container-tipo-libro .card .img-box {
@@ -65,7 +59,7 @@
     position: absolute;
     top: 252px;
     width: 100%;
-    height: 35px;
+    height: 65px;
     padding: 0 30px;
     text-align: center;
     overflow: hidden;
@@ -81,12 +75,12 @@
 }
 
 .container-tipo-libro .card:hover .content {
-    top: 130px;
+    top: 110px;
     height: 163px;
 }
 
 .container-tipo-libro .card .content h2 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 700;
     color: var(--color-700);
 }
@@ -94,6 +88,7 @@
 .container-tipo-libro .card .content p {
     color: #1c1c1c;
     font-size: 1.1rem;
+    margin-top: 0.3rem;
 }
 
 .container-tipo-libro .card .content a {
@@ -108,7 +103,7 @@
     position: relative;
 }
 
-.column-card {
+.container-tipo-libro .column-card {
     width: 100%;
     display: inherit;
     gap: 40px;
@@ -129,55 +124,47 @@
 
 
 .column-card:nth-child(1) .img-box img,
-.cards-section:nth-child(1) .contenedor_tarjeta img.fluid {
+.cards-section .corregir-margin div:nth-child(1) .contenedor_tarjeta img.fluid {
     object-position: right;
 }
 
-.column-card:nth-child(2) .card:nth-child(2) .img-box img {
+.column-card .card:nth-child(3) .img-box img,
+.cards-section .corregir-margin div:nth-child(3) .contenedor_tarjeta img.fluid {
     object-position: 30% 100%;
 }
 
+section#tipo-libros{
+    height: 630px;
+}
 
 @media (max-width: 1536px) {
 
-    .container-tipo-libro .column-card:nth-child(1) .card:hover .content {
-        height: 111px !important;
+    .container-tipo-libro .column-card .card:hover .content {
+        height: 336px;
+    }
+    
+    .container-tipo-libro .card:hover {
+        height: 470px;
     }
 
-    .container-tipo-libro .column-card:nth-child(1) .card:hover {
-        height: 255px !important;
-    }
-
-
-    .container-tipo-libro .column-card:nth-child(2) .card:hover .content {
-        height: 216px;
-    }
-
-    .container-tipo-libro .column-card:nth-child(2) .card:hover {
-        height: 360px;
+    section#tipo-libros{
+        height: 680px;
     }
 }
 
 @media (max-width: 1279px) {
 
-    .container-tipo-libro .column-card:nth-child(1) .card:hover .content {
-        height: 137px !important;
+    .container-tipo-libro .column-card .card:hover {
+        height: 530px;
     }
 
-    .container-tipo-libro .column-card:nth-child(1) .card:hover {
-        height: 280px !important;
+    .container-tipo-libro .column-card .card:hover .content {
+        height: 406px;
     }
 
-    .container-tipo-libro .column-card:nth-child(2) .card:hover .content {
-        height: 243px !important;
+    section#tipo-libros{
+        height: 740px;
     }
-
-    .container-tipo-libro .column-card:nth-child(2) .card:hover {
-        height: 390px !important;
-    }
-}
-
-@media (max-width: 1200px) {
     .container-tipo-libro {
         gap: 80px 40px;
     }
@@ -190,37 +177,16 @@
 @media (max-width: 1023px) {
     section#tipo-libros {
         padding: 2rem 1rem 4rem;
+        height: auto;
     }
-
-    .container-tipo-libro {
-        gap: 0px !important;
-        display: block !important;
-    }
-
-    .container-tipo-libro .column-card:nth-child(2) .card {
-        margin: 5.5rem 0 0;
-    }
-
-    .container-tipo-libro .card {
-        width: 100% !important;
-    }
-
-    .container-tipo-libro .column-card:nth-child(2) .card:hover {
-        height: 280px !important;
-    }
-
-    .container-tipo-libro .column-card:nth-child(2) .card:hover .content {
-        height: 137px !important;
-    }
-
-    section .corregir-margin div:nth-child(3) .contenedor .contenedor_tarjeta img{
-        object-position: 30% 50%;
-    }
-
 }
 
 
 @media (max-width: 1023px) {
+    .container-tipo-libro {
+        display: none;
+    }
+
     .remplazohref {
         text-decoration: none;
     }
