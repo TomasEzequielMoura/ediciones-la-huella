@@ -22,7 +22,7 @@ class MobileTipoLibro extends React.Component {
     return (
       <div>
         <div className='contenedor'>
-          <div onClick={() => console.log('hola')} className='contenedor_tarjeta'>
+          <div className='contenedor_tarjeta'>
             <div className='remplazohref'>
               <figure>
                 <div className='frontal'>
@@ -38,7 +38,6 @@ class MobileTipoLibro extends React.Component {
             </div>
           </div>
         </div>
-
       </div>
     );
 
@@ -187,7 +186,7 @@ const TipoLibro = () => {
                     </figure>
                   </div>
                 </div>
-              </div>
+              </div> 
             </div> */}
         </div>
       </div>
