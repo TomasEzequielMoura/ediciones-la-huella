@@ -287,10 +287,10 @@ section#tipo-libros{
     }
 
     .contenedor_tarjeta:hover figure {
-        -webkit-transform: perspective(600px) rotateY(180deg);
-        -ms-transform: perspective(600px) rotateY(180deg);
-        -o-transform: perspective(600px) rotateY(180deg);
-        transform: perspective(600px) rotateY(180deg);
+        -webkit-transform: perspective(600px) rotateY(-180deg) translateZ(1px);
+        -ms-transform: perspective(600px) rotateY(-180deg) translateZ(1px);
+        -o-transform: perspective(600px) rotateY(-180deg) translateZ(1px);
+        transform: perspective(600px) rotateY(-180deg) translateZ(1px);
         opacity:1;
         visibility:visible;
     }
