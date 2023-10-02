@@ -215,6 +215,7 @@ section#tipo-libros{
 
     .contenedor_tarjeta {
         width: 100%;
+        perspective: 1000px;
     }
 
     figure {
